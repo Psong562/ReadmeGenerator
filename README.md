@@ -1,10 +1,8 @@
 
 
-<h1 align="center"> asd </h1>
+<h1 align="center"> README Generator using Node.js </h1>
 
-![badge](https://img.shields.io/github/repo-size/psong562/readmegenerator)
-
-![badge](https://img.shields.io/github/commit-activity/w/psong562/readmegenerator) 
+![badge](https://img.shields.io/github/repo-size/psong562/readmegenerator) ![badge](https://img.shields.io/github/commit-activity/w/psong562/readmegenerator) 
 
 ## Table Of Contents
  - [Description](#Description)
@@ -16,19 +14,19 @@
  
 
 ## Description
-asd
+Created a ReadME template using node.js and npm `inquirer`
 
 ## Installation
-asd
+Using npm(node package manager) use npm install inquirer in terminal.
 
 ## Usage
-asd
+This project will be used for a UCI bootcamp class assignment.
 
 ## Test
-asd
+No test are including in this project.
 
 ## Contributors
-asd
+Peter Song
 
 ## License
 undefined
@@ -36,8 +34,9 @@ undefined
 
 #### Please reach me at - 
 ![badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
- asd
- ![badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-asd
+Psong562
+
+![badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+psong562@gmail.com
 
 

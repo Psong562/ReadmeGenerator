@@ -5,9 +5,9 @@ const { builtinModules } = require("module")
 function generateReadMe(answers) {
 return `
 
-<h1 align="center"> ${answers.title}
-![badge](https://img.shields.io/github/repo-size/psong562/readmegenerator)
-![badge](https://img.shields.io/github/commit-activity/w/psong562/readmegenerator) </h1>
+<h1 align="center"> ${answers.title} </h1>
+
+![badge](https://img.shields.io/github/repo-size/psong562/readmegenerator) ![badge](https://img.shields.io/github/commit-activity/w/psong562/readmegenerator)
 
 ## Table Of Contents
  - [Description](#Description)
