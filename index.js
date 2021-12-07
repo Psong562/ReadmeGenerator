@@ -1,10 +1,11 @@
+// constants and variables and requires for npm
 const fs = require (`fs`);
 const util = require(`util`);
 const inquirer = require(`inquirer`);
 const generateReadMe = require(`./utils/readMe.js`);
 const writeFileAsync = util.promisify(fs.writeFile)
 
-
+// function to start prompt
 const promptReadme = () => {
  return inquirer.prompt ([
   {
@@ -39,7 +40,7 @@ const promptReadme = () => {
   },
   {
   type: 'list',
-  name: 'liscense',
+  name: 'license',
   message: 'Choose a license for this projection',
   choices: [ `Apache`, `Mozilla`, `MIT` , `Open`, `GNU`],
   },
@@ -59,6 +60,7 @@ const promptReadme = () => {
     message: 'What are the test instructions project?',
   }
   
+  // Answer of prompt moved into writefile to create readme
 ]) .then(answers => {
   writeToFile(answers)
   console.log(`Successful Readme file created`)
@@ -67,41 +69,18 @@ const promptReadme = () => {
 
 };
 
-
+// function for writre file for answers to promp function
 const writeToFile = answers => {
   writeFileAsync(`README.md`, generateReadMe(answers))
 }
 
+// start prompt when script is called
 promptReadme()
 
 
 
 
-// promptReadme()
 
-// function writeToFile  (filename, data) {
-//   fs.writeFile(fileName, data, err => {
-//     if (err) {
-//       console.log(err);
-//     }
-//     console.log(`You have generated your README.md file`)
-//   })
-// }
-
-
-
-// async function init() {
-//   try {
-//     const answers = await promptReadme();
-//     const generateAnswers = generateReadMe(answers);
-
-//     await writeToFile(`./exampleREADME.md`, generateAnswers);
-//     console.log(`created exampleREADME.md`)
-//   } catch(err) {console.log(err);
-//   }
-// };
-
-// init();
 
 
 
