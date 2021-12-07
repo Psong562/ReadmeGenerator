@@ -21,7 +21,7 @@ const promptReadme = () => {
   {
   type: 'input',
   name: 'installation',
-  message: 'Please provide a brief installation process if any',
+  message: 'Please provide a brief installation process if any.',
   },
   {
   type: 'input',
@@ -41,7 +41,7 @@ const promptReadme = () => {
   {
   type: 'list',
   name: 'license',
-  message: 'Choose a license for this projection',
+  message: 'Choose a license for this projection:',
   choices: [ `Apache`, `Mozilla`, `MIT` , `Open`, `GNU`],
   },
   {
@@ -52,7 +52,7 @@ const promptReadme = () => {
   {
     type: 'input',
     name: 'email',
-    message: 'What is your email address',
+    message: 'What is your email address?',
   },
   {
     type: 'input',
